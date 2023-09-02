@@ -1,0 +1,98 @@
+/* font size */
+
+
+.accordion-button::after {
+    background-image: None !important;
+
+}
+
+.accordion-button {
+    background: none !important;
+    height: 48px !important;
+    font-size: 17px !important;
+    font-weight: 400 !important;
+    color: #1D1D1D !important;
+    font-family: 'Inter', sans-serif !important;
+    padding-left: 35px !important;
+
+
+
+
+}
+
+.accordion-button:not(.collapsed) {
+    background-color:
+        #004871 !important;
+    color: #FFFF !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(65, 151, 147, 0.018) !important;
+    position: relative;
+    transform: .5s !important;
+}
+
+.accordion-button .darrow {
+
+    transition: transform 20s ease;
+    /* Add a transition property for smooth rotation */
+}
+
+.accordion-button:not(.collapsed) .darrow {
+    rotate: 180deg;
+    margin-top: 11px;
+}
+
+
+
+.accordion-body {
+    padding: 0 !important;
+}
+
+
+.accordion-body li {
+    padding: 7px 0 7px 70px !important;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(68, 68, 68, 0.8);
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    position: relative;
+}
+
+.accordion-body li::after {
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 6px;
+    border-radius: 100%;
+    background-color: #004871;
+    left: 46px;
+    top: 15px;
+
+}
+
+.accordion-body .active li::after {
+    position: absolute;
+    content: "";
+    height: 9px;
+    width: 9px;
+    border-radius: 100%;
+    Background-color: #004871;
+    left: 44.5px;
+    top: 14px;
+
+}
+
+.accordion-body .active li {
+    font-weight: 600 !important;
+}
+
+
+
+
+.accordion-button:focus {
+    box-shadow: none !important;
+
+}
+
+.accordion-item {
+    margin: 8px 0 !important;
+}

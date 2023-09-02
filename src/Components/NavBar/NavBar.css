@@ -1,0 +1,103 @@
+.navbar {
+    height: 73px;
+    width: 100%;
+    background-color: #FFFF;
+    padding: 0 30px 0 0 !important;
+    z-index: 100 !important;
+    border-bottom: 1px solid #00000017;
+
+
+}
+
+.toggle-btn {
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+    background-color: #FF9640;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    position: absolute;
+    z-index: 2;
+    left: -15px;
+    transition: transform 0.5s;
+    color: #FFFF;
+    cursor: pointer;
+
+}
+
+
+.search input {
+    height: 44px;
+    width: 333px !important;
+    border: solid 2px #44444434;
+    border-radius: 8px;
+    padding: 0 0 3px 40px !important;
+    background-color: #F6F6F7;
+    border: none !important;
+    margin-left: 30px;
+}
+
+.search-icon-table {
+    position: absolute;
+    top: 4px;
+    left: 40px;
+    font-size: 20px;
+    color: #1d1d1d83;
+}
+
+.nav-profile {
+    background-color: #FFFF !important;
+}
+
+.nav-profile img {
+    height: 50px;
+    width: 50px;
+    border-radius: 7px;
+    background-color: #4444;
+}
+
+.css-pwyk3z-MuiBadge-badge {
+    background-color: #00B2FF !important;
+    color: #fff;
+    top: 5px !important;
+    right: 3px !important;
+
+}
+
+.nav-profile .dropdown-item {
+
+    width: 50% !important;
+
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+
+}
+
+@media only screen and (max-width:1000px) {
+    .navbar {
+
+        padding: 0 5px 0 0 !important;
+
+
+
+    }
+
+    .nav-profile {
+        color: black !important;
+    }
+
+    .toggle-btn {
+        color: #FFFF !important;
+    }
+
+    .css-pwyk3z-MuiBadge-badge {
+        background-color: #2e7d32 !important;
+
+    }
+
+
+}

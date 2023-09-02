@@ -1,0 +1,72 @@
+.character {
+    width: 85px;
+    height: 56px;
+    border-radius: 8px;
+    color: #1D1D1D !important;
+    background-color: rgb(255, 255, 255) !important;
+    border: 1px solid #1d1d1d59;
+    position: relative;
+    font-size: 31px;
+    font-weight: 500;
+
+}
+
+.character::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 50px;
+    background-color: #FF9640;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* safari and chrome */
+    -webkit-transform: translate(-50%, -50%);
+    /* Firefox */
+    -moz-transform: translate(-50%, -50%);
+    /* Internet Ex */
+    -ms-transform: translate(-50%, -50%);
+    /* Opera*/
+    -o-transform: translate(-50%, -50%);
+}
+
+.vi {
+    border: none !important;
+    color: #FFFF !important;
+}
+
+@media screen and (max-width: 776px) {
+    .character {
+        max-width: 50px;
+        height: 50px;
+        font-size: 25px;
+
+
+    }
+
+    :where(.vi__character) {
+
+        line-height: 40px;
+
+    }
+
+    .character::after {
+        width: 25px;
+        bottom: 7px;
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .character {
+        max-width: 40px;
+        height: 45px;
+
+    }
+
+    .character::after {
+        width: 25px;
+        bottom: 2.5px;
+        right: 11px;
+    }
+}
